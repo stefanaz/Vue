@@ -37,7 +37,7 @@ Vue.component('body-menu', {
             ctx = canvas.getContext("2d");
 
 
-        canvas.height = document.body.offsetHeight + 500;
+        canvas.height = document.body.offsetHeight ;//+ 500;
         canvas.width = 2500;
 
         // console.log('canvas.width', canvas.width);
@@ -45,7 +45,7 @@ Vue.component('body-menu', {
         var parts = [],
             minSpawnTime = 90,
             lastTime = new Date().getTime(),
-            maxLifeTime = Math.min(20000, (canvas.height/(1.5*60)*1000)),
+            maxLifeTime = Math.min(5000, (canvas.height/(1.5*60)*1000)),
             emitterX = canvas.width / 2,
             emitterY = canvas.height - 10,
             smokeImage = new Image();
@@ -59,31 +59,41 @@ Vue.component('body-menu', {
                 parts.push(new smoke(150, emitterY));
                 parts.push(new smoke(200, emitterY));
                 parts.push(new smoke(250, emitterY));
-
+                parts.push(new smoke(300, emitterY));
+                parts.push(new smoke(350, emitterY));
+                parts.push(new smoke(400, emitterY));
+                parts.push(new smoke(450, emitterY));
                 parts.push(new smoke(500, emitterY));
                 parts.push(new smoke(550, emitterY));
                 parts.push(new smoke(600, emitterY));
                 parts.push(new smoke(650, emitterY));
                 parts.push(new smoke(700, emitterY));
                 parts.push(new smoke(750, emitterY));
-
-
-
+                parts.push(new smoke(800, emitterY));
+                parts.push(new smoke(850, emitterY));
+                parts.push(new smoke(900, emitterY));
+                parts.push(new smoke(950, emitterY));
                 parts.push(new smoke(1000, emitterY));
                 parts.push(new smoke(1050, emitterY));
                 parts.push(new smoke(1100, emitterY));
                 parts.push(new smoke(1150, emitterY));
                 parts.push(new smoke(1200, emitterY));
                 parts.push(new smoke(1250, emitterY));
-
-
+                parts.push(new smoke(1250, emitterY));
+                parts.push(new smoke(1300, emitterY));
+                parts.push(new smoke(1350, emitterY));
+                parts.push(new smoke(1400, emitterY));
+                parts.push(new smoke(1450, emitterY));
                 parts.push(new smoke(1500, emitterY));
                 parts.push(new smoke(1550, emitterY));
                 parts.push(new smoke(1600, emitterY));
                 parts.push(new smoke(1650, emitterY));
                 parts.push(new smoke(1700, emitterY));
                 parts.push(new smoke(1750, emitterY));
-
+                parts.push(new smoke(1800, emitterY));
+                parts.push(new smoke(1850, emitterY));
+                parts.push(new smoke(1900, emitterY));
+                parts.push(new smoke(1950, emitterY));
                 parts.push(new smoke(2000, emitterY));
                 parts.push(new smoke(2050, emitterY));
                 parts.push(new smoke(2100, emitterY));

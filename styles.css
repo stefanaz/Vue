@@ -11,4 +11,5 @@ canvas {
     position:absolute;
     margin-left : 0;
     left: -100px;
+    bottom: -200px;
 }
